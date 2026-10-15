@@ -1,0 +1,210 @@
+{
+  "agentConfig": {
+    "botName": "HelpZap IA",
+    "businessName": "HelpPaln Soluções",
+    "businessDescription": "Plataforma líder em soluções e atendimento inteligente para pequenas e médias empresas.",
+    "personalityTone": "consultivo",
+    "customInstructions": "Você é o assistente virtual oficial da HelpPaln. \nSeu papel é recepcionar os clientes com cordialidade, tirar dúvidas sobre planos, serviços e agendamentos.\nSeja sempre objetivo, educado e use formatações adequadas para WhatsApp (*negrito*, tópicos curtos e emojis moderados).\nCaso o cliente faça uma pergunta específica para a qual você não tenha resposta confirmada na Base de Conhecimento, não invente informações; diga que vai consultar a equipe e pergunte se deseja falar com um atendente humano.",
+    "openaiApiKey": "",
+    "openaiModel": "gpt-4o-mini",
+    "handoffKeywords": [
+      "humano",
+      "atendente",
+      "falar com alguém",
+      "pessoa",
+      "especialista",
+      "suporte humano",
+      "sair do robô",
+      "gerente"
+    ],
+    "handoffMessage": "Entendido! Estou transferindo o seu atendimento para um de nossos especialistas humanos. Por favor, aguarde alguns instantes que logo alguém da equipe irá responder.",
+    "maxConsecutiveFailures": 2,
+    "activeHoursOnly": false,
+    "workingHoursStart": "08:00",
+    "workingHoursEnd": "18:00",
+    "outOfHoursMessage": "Olá! Nosso horário de atendimento com equipe humana é de segunda a sexta, das 08h às 18h. Posso tentar te ajudar por aqui com a nossa inteligência artificial enquanto isso! O que você procura?",
+    "status": "active"
+  },
+  "knowledgeBase": [
+    {
+      "id": "kb_1",
+      "category": "geral",
+      "question": "O que é a HelpPaln?",
+      "answer": "A HelpPaln é uma plataforma completa que automatiza atendimentos pelo WhatsApp usando Inteligência Artificial, CRM visual e distribuição de conversas para múltiplos atendentes.",
+      "keywords": [
+        "sobre",
+        "empresa",
+        "helppaln",
+        "o que faz",
+        "como funciona"
+      ],
+      "createdAt": "2026-10-15T15:50:06.020Z",
+      "updatedAt": "2026-10-15T15:50:06.021Z"
+    },
+    {
+      "id": "kb_2",
+      "category": "precos",
+      "question": "Quais são os planos e valores disponíveis?",
+      "answer": "Temos 3 planos principais:\n\n*1. Plano Start:* R$ 97/mês (1 número de WhatsApp, 2 atendentes, IA básica)\n*2. Plano Pro:* R$ 197/mês (2 números, 5 atendentes, IA completa com FAQ e CRM)\n*3. Plano Enterprise:* Sob consulta (números ilimitados, IA personalizada, suporte prioritário)\n\nTodos os planos têm 7 dias de garantia incondicional!",
+      "keywords": [
+        "preço",
+        "valor",
+        "planos",
+        "custo",
+        "mensalidade",
+        "quanto custa"
+      ],
+      "createdAt": "2026-10-15T15:50:06.021Z",
+      "updatedAt": "2026-10-15T15:50:06.021Z"
+    },
+    {
+      "id": "kb_3",
+      "category": "pagamentos",
+      "question": "Quais são as formas de pagamento aceitas?",
+      "answer": "Aceitamos Pix com ativação imediata, cartão de crédito em até 12x e boleto bancário para faturas anuais.",
+      "keywords": [
+        "pix",
+        "cartao",
+        "boleto",
+        "pagamento",
+        "como pagar"
+      ],
+      "createdAt": "2026-10-15T15:50:06.021Z",
+      "updatedAt": "2026-10-15T15:50:06.021Z"
+    },
+    {
+      "id": "kb_4",
+      "category": "horarios",
+      "question": "Qual é o horário de atendimento?",
+      "answer": "Nosso assistente de IA funciona 24 horas por dia, 7 dias por semana! A equipe humana atende de segunda a sexta, das 08:00 às 18:00.",
+      "keywords": [
+        "horario",
+        "funcionamento",
+        "horas",
+        "quando atendem",
+        "aberto"
+      ],
+      "createdAt": "2026-10-15T15:50:06.021Z",
+      "updatedAt": "2026-10-15T15:50:06.021Z"
+    },
+    {
+      "id": "kb_5",
+      "category": "servicos",
+      "question": "Como funciona a integração com o WhatsApp?",
+      "answer": "A conexão é feita em menos de 1 minuto através da leitura de um QR Code direto na nossa tela, exatamente igual ao WhatsApp Web. Você não perde suas conversas antigas.",
+      "keywords": [
+        "whatsapp",
+        "qrcode",
+        "conectar",
+        "integracao",
+        "numero"
+      ],
+      "createdAt": "2026-10-15T15:50:06.021Z",
+      "updatedAt": "2026-10-15T15:50:06.021Z"
+    }
+  ],
+  "conversations": [
+    {
+      "id": "conv_1",
+      "remoteJid": "5511987654321@s.whatsapp.net",
+      "contactName": "Carlos Eduardo Ramos",
+      "contactPhone": "+55 (11) 98765-4321",
+      "assignedMode": "ai",
+      "status": "open",
+      "unreadCount": 0,
+      "lastMessage": "Perfeito, vou verificar o plano Pro! Como faço para assinar?",
+      "lastMessageTime": "2026-10-15T15:38:06.021Z",
+      "tags": [
+        "Lead Quente",
+        "Interesse Plano Pro"
+      ],
+      "crmStage": "proposta",
+      "botConsecutiveFailures": 0
+    },
+    {
+      "id": "conv_2",
+      "remoteJid": "5521976543210@s.whatsapp.net",
+      "contactName": "Dra. Mariana Vasconcelos",
+      "contactPhone": "+55 (21) 97654-3210",
+      "assignedMode": "pending_handoff",
+      "status": "open",
+      "unreadCount": 2,
+      "lastMessage": "Gostaria de falar com um atendente humano para tirar uma dúvida sobre contrato corporativo.",
+      "lastMessageTime": "2026-10-15T15:47:06.021Z",
+      "tags": [
+        "Urgente",
+        "Transbordo Humano",
+        "Clínica"
+      ],
+      "crmStage": "qualificado",
+      "botConsecutiveFailures": 0
+    },
+    {
+      "id": "conv_3",
+      "remoteJid": "5531998877665@s.whatsapp.net",
+      "contactName": "Felipe Albuquerque",
+      "contactPhone": "+55 (31) 99887-7665",
+      "assignedMode": "human",
+      "status": "open",
+      "unreadCount": 0,
+      "lastMessage": "Atendimento assumido pelo especialista Roberto.",
+      "lastMessageTime": "2026-10-15T15:05:06.021Z",
+      "tags": [
+        "Em Negociação"
+      ],
+      "crmStage": "em_atendimento",
+      "botConsecutiveFailures": 0
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg_1",
+      "conversationId": "conv_1",
+      "sender": "user",
+      "content": "Olá, gostaria de saber os valores dos planos de vocês.",
+      "timestamp": "2026-10-15T15:35:06.021Z"
+    },
+    {
+      "id": "msg_2",
+      "conversationId": "conv_1",
+      "sender": "assistant",
+      "content": "Olá, Carlos! É um prazer falar com você. 😊\n\nNós temos 3 planos pensados para o tamanho do seu negócio:\n\n*1. Plano Start:* R$ 97/mês (1 WhatsApp, 2 atendentes)\n*2. Plano Pro:* R$ 197/mês (2 WhatsApps, 5 atendentes, IA completa com CRM)\n*3. Plano Enterprise:* Sob consulta\n\nQual desses melhor atende o volume da sua empresa?",
+      "timestamp": "2026-10-15T15:36:06.021Z"
+    },
+    {
+      "id": "msg_3",
+      "conversationId": "conv_1",
+      "sender": "user",
+      "content": "Perfeito, vou verificar o plano Pro! Como faço para assinar?",
+      "timestamp": "2026-10-15T15:38:06.021Z"
+    },
+    {
+      "id": "msg_4",
+      "conversationId": "conv_2",
+      "sender": "user",
+      "content": "Boa tarde, preciso de uma proposta customizada para 4 filiais.",
+      "timestamp": "2026-10-15T15:45:06.021Z"
+    },
+    {
+      "id": "msg_5",
+      "conversationId": "conv_2",
+      "sender": "user",
+      "content": "Gostaria de falar com um atendente humano para tirar uma dúvida sobre contrato corporativo.",
+      "timestamp": "2026-10-15T15:47:06.021Z"
+    },
+    {
+      "id": "msg_6",
+      "conversationId": "conv_2",
+      "sender": "assistant",
+      "content": "Entendido, Dra. Mariana! Estou transferindo o seu atendimento para um de nossos especialistas corporativos. Por favor, aguarde alguns instantes que logo alguém da equipe irá responder.",
+      "timestamp": "2026-10-15T15:48:06.021Z"
+    }
+  ],
+  "evolutionSettings": {
+    "apiUrl": "http://localhost:8080",
+    "apiKey": "",
+    "instanceName": "helppaln_bot",
+    "webhookUrl": "http://localhost:3333/api/webhook/evolution",
+    "isConnected": false
+  }
+}
